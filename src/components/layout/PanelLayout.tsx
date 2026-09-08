@@ -27,7 +27,7 @@ function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
   const vendor = useAuth((s) => s.vendor);
   return (
     <div className="h-full flex flex-col">
-      <div className="h-16 px-5 flex items-center border-b border-border-subtle"><Link to="/dashboard"><img src="/logo.png" alt="Tag Traditions" className="h-11 w-auto" /></Link></div>
+      <div className="h-20 px-5 flex items-center border-b border-border-subtle"><Link to="/dashboard"><img src="/logo.png" alt="Tag Traditions" width={800} height={347} className="h-14 w-auto" /></Link></div>
       <div className="px-5 py-4 border-b border-border-subtle flex items-center gap-3">
         <Avatar name={vendor?.businessName ?? ''} src={vendor?.logo} size={40} />
         <div className="min-w-0"><div className="text-body font-semibold text-ink-900 truncate">{vendor?.businessName}</div><div className="text-caption text-success-700 inline-flex items-center gap-1"><BadgeCheck className="h-3.5 w-3.5" /> Verified seller</div></div>
@@ -100,7 +100,7 @@ export function PanelLayout() {
       <div className="min-w-0 flex flex-col">
         <header className="sticky top-0 z-40 h-16 bg-cream-100/95 backdrop-blur border-b border-border-strong px-4 md:px-6 flex items-center gap-3">
           <button onClick={() => setSidebar(true)} className="lg:hidden h-10 w-10 -ml-2 inline-flex items-center justify-center rounded-md text-ink-700" aria-label="Menu"><Menu className="h-6 w-6" /></button>
-          <div className="lg:hidden"><img src="/logo.png" alt="Tag Traditions" className="h-9 w-auto" /></div>
+          <div className="lg:hidden"><img src="/logo.png" alt="Tag Traditions" width={800} height={347} className="h-11 w-auto" /></div>
           <div className="ml-auto flex items-center gap-1"><Notifications /><AccountMenu /></div>
         </header>
         <main className="flex-1 p-4 md:p-6 lg:p-8 max-w-[1400px] w-full">

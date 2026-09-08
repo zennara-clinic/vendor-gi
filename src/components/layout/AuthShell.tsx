@@ -10,7 +10,7 @@ export function AuthShell({ title, subtitle, children, footer, wide }: { title: 
         <span className="text-caption font-semibold uppercase tracking-[0.12em] text-ink-400">Seller Centre</span>
       </div>
       <main className="flex-1 flex flex-col items-center px-4 pb-12">
-        <img src="/logo.png" alt="Tag Traditions" width={606} height={226} className="h-16 w-auto mt-2 mb-8" />
+        <img src="/logo.png" alt="Tag Traditions" width={800} height={347} className="h-16 w-auto mt-2 mb-8" />
         <div className={`w-full ${wide ? 'max-w-[640px]' : 'max-w-[400px]'} rounded-lg bg-white border border-border-strong p-6 md:p-8`}>
           <h1 className="font-display text-[26px] leading-8 font-semibold text-ink-900 text-center">{title}</h1>
           {subtitle && <p className="text-body text-ink-500 text-center mt-1.5">{subtitle}</p>}
